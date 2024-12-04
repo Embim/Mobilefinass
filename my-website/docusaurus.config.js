@@ -8,7 +8,7 @@ const config = {
   tagline: 'Туториал', // Описание сайта на начальной странице
   favicon: 'img/favicon.ico', // Иконка сайта
   url: 'https://embim.github.io', // Адрес gitlab pages, обычно https://<username>.github.io
-  baseUrl: 'https://github.com/Embim/Mobilefinass', // Базовый url, обычно название репозитория
+  baseUrl: 'https://github.com/Embim/Mobilefinass/tree/main/my-website', // Базовый url, обычно название репозитория
   organizationName: 'Embim', // Имя GitHub пользователя
   projectName: 'Mobilefinass', // Имя репозитория
   onBrokenLinks: 'warn', // Чтобы не падать при наличии неработающих ссылок
@@ -29,7 +29,7 @@ const config = {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
           editUrl:
-            'https://github.com/Embim/Mobilefinass',
+            'https://github.com/Embim/Mobilefinass/tree/main/my-website',
           remarkPlugins: [simplePlantUML], //подключаем плагин для plantuml
         },
         blog: false,
@@ -68,7 +68,7 @@ const config = {
         // тут можно настроить элементы навбара
         items: [
           {
-            href: 'https://github.com/Embim/Mobilefinass',
+            href: 'https://github.com/Embim/Mobilefinass/tree/main/my-website',
             label: 'GitHub',
             position: 'right',
           },
