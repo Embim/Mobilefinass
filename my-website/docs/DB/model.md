@@ -6,7 +6,7 @@ sidebar_position: 1
 # Модель данных
 
 import Drawio from '@theme/Drawio'
-import diagram from '!!raw-loader!./model.drawio';
+import diagram from '!!raw-loader!./Тиньк.drawio';
 
 <Drawio content={diagram} editable={false} />
 
