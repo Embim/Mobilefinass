@@ -7,7 +7,7 @@ const config = {
   title: 'Mobilefinass', //Название сайта на начальной странице
   tagline: 'Туториал', // Описание сайта на начальной странице
   favicon: 'img/favicon.ico', // Иконка сайта
-  url: 'https://embim.github.io/', // Адрес gitlab pages, обычно https://<username>.github.io
+  url: 'https://embim.github.io', // Адрес gitlab pages, обычно https://<username>.github.io
   baseUrl: 'Mobilefinass', // Базовый url, обычно название репозитория
   organizationName: 'Embim', // Имя GitHub пользователя
   projectName: 'Mobilefinass', // Имя репозитория
