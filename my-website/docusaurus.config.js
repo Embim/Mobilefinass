@@ -9,7 +9,7 @@ const config = {
   favicon: 'img/favicon.ico', // Иконка сайта
   url: 'https://embim.github.io/', // Адрес gitlab pages, обычно https://<username>.github.io
   baseUrl: 'Mobilefinass', // Базовый url, обычно название репозитория
-  organizationName: 'embim', // Имя GitHub пользователя
+  organizationName: 'Embim', // Имя GitHub пользователя
   projectName: 'Mobilefinass', // Имя репозитория
   onBrokenLinks: 'warn', // Чтобы не падать при наличии неработающих ссылок
   onBrokenMarkdownLinks: 'warn', // Чтобы не падать при наличии неработающих ссылок
@@ -44,7 +44,7 @@ const config = {
       {
         specs: [
           {
-            id: 'petstore',
+            id: 'mobilefinass',
             spec: 'api_specs/openapi.yaml',
           },
         ],
