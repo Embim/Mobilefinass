@@ -5,10 +5,7 @@ sidebar_position: 3
 
 # Диаграмма Use Case для Mobile Finance Assistant
 
-import Drawio from '@theme/Drawio'
-import diagram from '!!raw-loader!./use_case_diagram.drawio';
-
-<Drawio content={diagram} editable={false} />
+![Use Case Diagram](./use_case_diagram.png)
 
 ## Описание Use Case
 

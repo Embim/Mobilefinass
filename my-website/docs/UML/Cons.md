@@ -3,12 +3,9 @@ title: Диаграмма последовательности
 sidebar_position: 2
 ---
 
-# Диаграмма последовательности: Процесс регистрации пользователя
+# Диаграмма Use Case для Mobile Finance Assistant
 
-import Drawio from '@theme/Drawio'
-import diagram from '!!raw-loader!./registration_process.drawio';
-
-<Drawio content={diagram} editable={false} />
+![Use Case Diagram](./registration_process.png)
 
 ## Описание процесса регистрации
 
