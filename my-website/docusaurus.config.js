@@ -60,7 +60,7 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'doc-as-a-code-workshop', //Название на навбаре
+        title: 'MobileFinanceAssistant', //Название на навбаре
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg', //Логотип на навбаре
