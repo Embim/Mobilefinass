@@ -23,4 +23,4 @@ sidebar_position: 1
 
 # DMN
 
-[DMN](BPMN.dmn)
+[DMN](Проверкакорретностиданных.dmn)
