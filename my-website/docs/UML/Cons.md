@@ -3,7 +3,7 @@ title: Диаграмма последовательности
 sidebar_position: 2
 ---
 
-# Диаграмма Use Case для Mobile Finance Assistant
+# Диаграмма Последовательности для Mobile Finance Assistant
 ```plantuml
 @startuml
 
