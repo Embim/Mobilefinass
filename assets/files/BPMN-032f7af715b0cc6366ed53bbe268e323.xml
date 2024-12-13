@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_08ix89q" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.28.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+  <decision id="Decision_0b4il3l" name="Проверить правильность данных">
+    <decisionTable id="DecisionTable_0igo1m2">
+      <input id="Input_1" label="Email корректен" biodi:width="192">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0r7u54i" label="Возраст &#62;= 14">
+        <inputExpression id="LiteralExpression_1w8lceg" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1hf3817" label="Регион поддерживается">
+        <inputExpression id="LiteralExpression_0p5rdb4" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1ytam4v" label="Не дублирующая запись">
+        <inputExpression id="LiteralExpression_1gpw6cr" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Результат регистрации" typeRef="string" />
+      <rule id="DecisionRule_1jhmmpa">
+        <description>Все условия соблюдены, регистрация успешна</description>
+        <inputEntry id="UnaryTests_10kwecv">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03cr07l">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04bx0nj">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a3h5sh">
+          <text>Да</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1brv0pd">
+          <text>Успешно</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11cugmo">
+        <description>Неправильно введенный email</description>
+        <inputEntry id="UnaryTests_0mnu5en">
+          <text>Нет</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05dek45">
+          <text>Любой</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wc5fr6">
+          <text>Любой</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1c3lkcq">
+          <text>Любой</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12og7nk">
+          <text>Некорректный email, проверьте корретность данных</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hins38">
+        <description>Пользователь младше 14 лет</description>
+        <inputEntry id="UnaryTests_1a4atns">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ojefhx">
+          <text>Нет</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14ruccb">
+          <text>Любой</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z5e85t">
+          <text>Любой</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01hffjv">
+          <text>Некорректный возраст, проверьте корретность данных</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0oyv8ut">
+        <description>Регион пользователя не поддерживается</description>
+        <inputEntry id="UnaryTests_1bbxpgh">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1po62c3">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05smtln">
+          <text>Нет</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06drfi0">
+          <text>Любой</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15w1sos">
+          <text>Некорретный регион, проверьте корретность данных</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ami0jn">
+        <description>Найден дубликат записи</description>
+        <inputEntry id="UnaryTests_0kpbua9">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10lyat0">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0806qk2">
+          <text>Да</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17u8p14">
+          <text>Нет</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bcmhqn">
+          <text>Дублирующая запись, запись уже сущетствует</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0b4il3l">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
+
