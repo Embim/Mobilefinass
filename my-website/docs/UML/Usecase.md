@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Диаграмма Use Case для Mobile Finance Assistant
 
-```planuml
+```plantuml
 @startuml
 
 left to right direction
