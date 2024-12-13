@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Требования/ft" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Функциональные требования | Mobilefinass</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://embim.github.io/Mobilefinass/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://embim.github.io/Mobilefinass/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://embim.github.io/Mobilefinass/docs/Требования/ft"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Функциональные требования | Mobilefinass"><meta data-rh="true" name="description" content="Функциональные требования по проекту"><meta data-rh="true" property="og:description" content="Функциональные требования по проекту"><link data-rh="true" rel="icon" href="/Mobilefinass/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://embim.github.io/Mobilefinass/docs/Требования/ft"><link data-rh="true" rel="alternate" href="https://embim.github.io/Mobilefinass/docs/Требования/ft" hreflang="en"><link data-rh="true" rel="alternate" href="https://embim.github.io/Mobilefinass/docs/Требования/ft" hreflang="x-default"><script src="https://cdn.jsdelivr.net/npm/docusaurus-plugin-drawio/viewer.min.js"></script><link rel="stylesheet" href="/Mobilefinass/assets/css/styles.3f56d5eb.css">
+<script src="/Mobilefinass/assets/js/runtime~main.cc987200.js" defer="defer"></script>
+<script src="/Mobilefinass/assets/js/main.fc9df66b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Mobilefinass/"><div class="navbar__logo"><img src="/Mobilefinass/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Mobilefinass/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">MobileFinanceAssistant</b></a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/Embim/Mobilefinass/tree/main/my-website" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Mobilefinass/docs/intro">Домашняя страница</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Mobilefinass/docs/category/архитектура">Архитектура</a><button aria-label="Expand sidebar category &#x27;Архитектура&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Mobilefinass/docs/category/апи">АПИ</a><button aria-label="Expand sidebar category &#x27;АПИ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/Mobilefinass/docs/category/requirements">Requirements</a><button aria-label="Collapse sidebar category &#x27;Requirements&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Mobilefinass/docs/Требования/ft">Функциональные требования</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Mobilefinass/docs/Требования/nft">Не Функциональные требования</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Mobilefinass/docs/category/erd">ERD</a><button aria-label="Expand sidebar category &#x27;ERD&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Mobilefinass/docs/category/uml">UML</a><button aria-label="Expand sidebar category &#x27;UML&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Mobilefinass/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/Mobilefinass/docs/category/requirements"><span itemprop="name">Requirements</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Функциональные требования</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Функциональные требования</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-требования-по-проекту">Функциональные требования по проекту<a href="#функциональные-требования-по-проекту" class="hash-link" aria-label="Direct link to Функциональные требования по проекту" title="Direct link to Функциональные требования по проекту">​</a></h2>
+<p>Ниже представлены функциональные требования по проекту в формате use case</p>
+<h1>Use Case 1 - Регистрация пользователя</h1>
+<p><strong>Цель</strong>: Позволить новому пользователю создать учетную запись в системе для получения доступа ко всем функциям приложения.</p>
+<p><strong>Приоритет:</strong> Must Have, самый высокий</p>
+<p><strong>Обоснование:</strong> Без данного функционала приложение не сможет персонализировать данные и различать пользователей системы.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> - человек, желающий зарегистрироваться и начать использовать приложение.</li>
+<li><strong>Система аутентификации и регистрации</strong> - модуль, обрабатывающий регистрацию и проверку учетных данных.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>Пользователь имеет доступ к сети Интернет и открыт экран регистрации.</li>
+<li>Система доступна и работает в штатном режиме.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> открывает страницу регистрации.</li>
+<li><strong>Система</strong> отображает форму регистрации с полями: Имя пользователя, Email, Пароль и Подтверждение пароля.</li>
+<li><strong>Пользователь</strong> заполняет все поля формы и нажимает кнопку Зарегистрироваться.</li>
+<li><strong>Система</strong> проверяет корректность введенных данных:<!-- -->
+<ul>
+<li>Проверяет, чтобы все поля были заполнены.</li>
+<li>Проверяет, чтобы Email имел корректный формат и не использовался ранее.</li>
+<li>Проверяет, чтобы пароль соответствовал требованиям безопасности (например, минимум 8 символов, одна заглавная буква и один спецсимвол).</li>
+</ul>
+</li>
+<li>Если все проверки пройдены, <strong>Система</strong> отправляет письмо с подтверждением регистрации на указанный Email.</li>
+<li><strong>Пользователь</strong> открывает письмо и нажимает на ссылку для подтверждения регистрации.</li>
+<li><strong>Система</strong> активирует учетную запись и отображает сообщение: Регистрация завершена. Добро пожаловать!.</li>
+<li><strong>Пользователь</strong> может войти в систему, используя свои учетные данные.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если <strong>Пользователь</strong> вводит некорректный Email или пароль не соответствует требованиям безопасности, <strong>Система</strong> отображает сообщение: Некорректные данные. Пожалуйста, проверьте введенные данные и повторите попытку.</li>
+<li>Если Email уже используется, <strong>Система</strong> отображает сообщение: Этот Email уже зарегистрирован. Пожалуйста, используйте другой Email или восстановите пароль.</li>
+<li>Если пользователь не подтверждает Email в течение 24 часов, <strong>Система</strong> автоматически удаляет учетную запись и отображает сообщение: Регистрация не завершена. Пожалуйста, зарегистрируйтесь снова.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Пользователь успешно зарегистрирован в системе и может входить в личный кабинет.</li>
+<li>Система сохраняет данные учетной записи в базе данных.</li>
+</ul>
+<h1>Use Case 2 - Авторизация пользователя</h1>
+<p><strong>Цель</strong>: Позволить зарегистрированному пользователю войти в систему для получения доступа к личному кабинету и другим функциям приложения.</p>
+<p><strong>Приоритет:</strong> Must Have, самый высокий</p>
+<p><strong>Обоснование:</strong> Без данного функционала пользователь не сможет полноценно использовать приложение, а именно заходить в него и вносить персональные данные.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong>: зарегистрированный пользователь, желающий войти в систему.</li>
+<li><strong>Система аутентификации</strong>: модуль, отвечающий за проверку учетных данных и аутентификацию пользователя.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>Пользователь зарегистрирован в системе и учетная запись активирована.</li>
+<li>Пользователь находится на экране входа в систему.</li>
+<li>Система аутентификации доступна и работает корректно.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> открывает страницу входа и вводит свой Email и Пароль.</li>
+<li><strong>Пользователь</strong> нажимает кнопку Войти.</li>
+<li><strong>Система</strong> проверяет наличие учетной записи с указанным Email в базе данных.</li>
+<li><strong>Система</strong> сверяет введенный Пароль с паролем, хранящимся в базе данных.</li>
+<li>Если учетные данные корректны, <strong>Система</strong> авторизует пользователя и открывает личный кабинет.</li>
+<li><strong>Пользователь</strong> получает доступ к своему профилю и всем функциям системы.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если <strong>Пользователь</strong> ввел некорректный Email или Пароль, <strong>Система</strong> отображает сообщение: Неверный Email или пароль. Пожалуйста, повторите попытку.</li>
+<li>Если <strong>Пользователь</strong> вводит неправильные учетные данные более 5 раз подряд, <strong>Система</strong> временно блокирует учетную запись на 10 минут и отображает сообщение: Ваша учетная запись временно заблокирована. Попробуйте снова через 10 минут.</li>
+<li>Если учетная запись пользователя не активирована, <strong>Система</strong> отображает сообщение: Ваша учетная запись не активирована. Пожалуйста, проверьте свой Email и подтвердите регистрацию.</li>
+<li>Если пользователь забыл пароль, он может нажать на ссылку Забыли пароль? и <strong>Система</strong> перенаправит его на форму восстановления пароля.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Пользователь успешно вошел в систему и получил доступ к своему личному кабинету.</li>
+<li>Система сохраняет сессию пользователя и предоставляет доступ к защищенным функциям.</li>
+</ul>
+<h1>Use Case 3 - Создание бюджета</h1>
+<p><strong>Цель</strong>: Позволить пользователю создать бюджет, как для одного человека, так и для группы (например, для семьи) и управлять общими финансами.</p>
+<p><strong>Приоритет:</strong> Must Have, самый высокий</p>
+<p><strong>Обоснование:</strong> одна из основных функций мобильного приложения, позволяющая пользователю управлять финансами и получать рекомендации от системы.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong>: администратор бюджета.</li>
+<li><strong>Система управлени я совместными финансами</strong>: инструмент для управления общими расходами и бюджетами.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> зарегистрирован в приложении.</li>
+<li><strong>Пользователь</strong> создал группу (например, для семьи или друзей).</li>
+<li>У всех участников группы есть доступ к общей финансовой информации.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> выбирает пункт меню Создать бюджет.</li>
+<li><strong>Система</strong> отображает форму с полями: Название бюджета, Общая сумма, Участники.</li>
+<li><strong>Пользователь</strong> вводит название бюджета (например, Семейный бюджет) и общую сумму.</li>
+<li><strong>Пользователь</strong> добавляет категории расходов (например, Продукты, Транспорт, Развлечения) и указывает целевые суммы для каждой категории.</li>
+<li><strong>Система</strong> проверяет введенные данные на корректность (поля не могут быть пустыми, целевые суммы не могут превышать общий бюджет).</li>
+<li>Если введенные данные корректны, <strong>Пользователь</strong> нажимает кнопку Сохранить.</li>
+<li><strong>Пользователь</strong> выбирает участников группы, которые будут добавлены к бюджету.</li>
+<li><strong>Система</strong> отправляет приглашения другим участникам.</li>
+<li>Участники принимают приглашение, и бюджет становится доступным для всех.</li>
+<li><strong>Пользователь</strong> и другие члены группы могут добавлять расходы, которые автоматически отражаются в общем бюджете.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если участники не принимают приглашение, бюджет создается, но доступен только для администратора.</li>
+<li><strong>Пользователь</strong> может никого не указывать в участниках бюджета и тогда будет создан личный бюджет.</li>
+<li>Если <strong>Пользователь</strong> не заполнил одно из обязательных полей, <strong>Система</strong> выводит сообщение об ошибке Пожалуйста, заполните все обязательные поля.</li>
+<li>Если сумма категорий превышает общий бюджет, <strong>Система</strong> выводит сообщение об ошибке Сумма категорий не должна превышать общий бюджет.</li>
+<li>Если <strong>Пользователь</strong> отменяет создание бюджета на любом этапе, <strong>Система</strong> закрывает форму без сохранения данных.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Система создает совместный бюджет и распределяет его среди участников.</li>
+<li>Все изменения в бюджете синхронизируются в реальном времени между участниками.</li>
+</ul>
+<h1>Use Case 4 - Обучение финансовой грамотности</h1>
+<p><strong>Цель</strong>: Предоставить пользователю персонализированные уроки по финансовой грамотности для повышения уровня знаний в области управления финансами и улучшения финансового поведения.</p>
+<p><strong>Приоритет:</strong> Must Have, самый высокий</p>
+<p><strong>Обоснование:</strong> одна из killer feature данной программы, которая будет привлекать пользователей.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> - человек, стремящийся обучаться финансовой грамотности.</li>
+<li><strong>Система</strong> - приложение, предоставляющее уроки и тесты для улучшения знаний пользователя в области финансов.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>Пользователь зарегистрирован и авторизован в системе.</li>
+<li>Система работает без сбоев, и все уроки загружены корректно.</li>
+<li>Система использует ИИ для геймификации процесса.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> открывает раздел &quot;Обучение финансовой грамотности&quot; в главном меню приложения.</li>
+<li><strong>Система</strong> предлагает пользователю пройти краткий тест для оценки уровня финансовых знаний (если не был пройден ранее).</li>
+<li><strong>Пользователь</strong> проходит тест и получает результаты, определяющие его текущий уровень знаний.</li>
+<li>На основе результатов теста <strong>Система</strong> предлагает персонализированную учебную программу, соответствующую уровню пользователя.</li>
+<li><strong>Пользователь</strong> выбирает первый урок из предложенной программы (например, &quot;Основы управления личными финансами&quot;).</li>
+<li><strong>Система</strong> отображает урок, который состоит из теоретической части (статьи, видео, инфографика) и интерактивных упражнений.</li>
+<li>После завершения урока <strong>Пользователь</strong> нажимает кнопку &quot;Пройти тест&quot;.</li>
+<li><strong>Система</strong> отображает тест для проверки знаний, который состоит из нескольких вопросов по пройденному материалу.</li>
+<li><strong>Пользователь</strong> отвечает на вопросы, после чего <strong>Система</strong> оценивает ответы и отображает результаты тестирования.</li>
+<li>Если тест пройден успешно, <strong>Пользователь</strong> получает награду (например, значок или сертификат), а <strong>Система</strong> рекомендует следующий урок.</li>
+<li><strong>Пользователь</strong> может вернуться к предыдущим урокам для повторного прохождения или просмотра материалов.</li>
+<li><strong>Система</strong> предлагает пользователю простые задачи, выполняющиеся в процессе финансовой активности, за выполнение которых ему даются награды и поощрения.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если <strong>Пользователь</strong> не завершает тест или отвечает неправильно на большое количество вопросов, <strong>Система</strong> предлагает пересмотреть материалы и пройти тест заново.</li>
+<li>Если <strong>Пользователь</strong> не хочет проходить тест, он может просмотреть дополнительные учебные материалы, но награда не будет начислена.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li><strong>Система</strong> сохраняет результаты обучения и тестов в профиле пользователя.</li>
+<li><strong>Пользователь</strong> может просматривать прогресс обучения и переходить к следующим уровням уроков.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="текстовое-описание-функциональных-требований-классический-формат">Текстовое описание функциональных требований (Классический формат)<a href="#текстовое-описание-функциональных-требований-классический-формат" class="hash-link" aria-label="Direct link to Текстовое описание функциональных требований (Классический  формат)" title="Direct link to Текстовое описание функциональных требований (Классический формат)">​</a></h3>
+<ol>
+<li>
+<p><strong>Регистрация и тестирование уровня знаний</strong>:</p>
+<ul>
+<li>При первом запуске раздела &quot;Обучение&quot;, система предлагает пользователю пройти тест для определения уровня знаний.</li>
+<li>Тест должен состоять минимум из 10 вопросов и включать базовые концепции финансовой грамотности.</li>
+<li>На основе результатов теста система определяет уровень знаний (начальный, средний, продвинутый).</li>
+</ul>
+</li>
+<li>
+<p><strong>Лекции и учебные материалы</strong>:</p>
+<ul>
+<li>Лекции должны быть адаптированы под уровень знаний пользователя.</li>
+<li>Каждая лекция длится не более 5 минут.</li>
+<li>Каждая лекция включает в себя:<!-- -->
+<ul>
+<li>Теоретический материал (текст, инфографика, видео).</li>
+<li>Интерактивные упражнения для закрепления материала.</li>
+</ul>
+</li>
+<li>По завершению урока система предлагает пройти тест для оценки усвоенных знаний.</li>
+</ul>
+</li>
+<li>
+<p><strong>Тестирование знаний</strong>:</p>
+<ul>
+<li>Тест состоит из 5-10 вопросов, связанных с содержанием пройденного урока.</li>
+<li>После завершения теста система должна отобразить результаты и процент правильных ответов.</li>
+<li>Если тест не пройден, система предлагает повторить урок или тест.</li>
+</ul>
+</li>
+<li>
+<p><strong>Награды и прогресс</strong>:</p>
+<ul>
+<li>Система должна отображать прогресс пользователя в виде диаграммы или значков.</li>
+<li>За успешное прохождение уроков и тестов пользователь получает сертификаты или виртуальные награды.</li>
+</ul>
+</li>
+<li>
+<p><strong>Персонализированные рекомендации</strong>:</p>
+<ul>
+<li>На основе результатов тестирования и прогресса обучения система должна предлагать новые уроки или дополнительные материалы для более глубокого изучения.</li>
+</ul>
+</li>
+</ol>
+<h1>Use Case 5 - Создание финансовой цели</h1>
+<p><strong>Цель</strong>: Позволить пользователю установить финансовую цель (например, накопить 100 000 рублей на отпуск) и отслеживать ее прогресс.</p>
+<p><strong>Приоритет:</strong> Should Have, средний</p>
+<p><strong>Обоснование:</strong> Базовая функция, которую ожидают пользователи, сделает приложение значительно привлекательнее.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> - лицо, желающее создать и отслеживать финансовую цель.</li>
+<li><strong>Система управления целями</strong> - инструмент для постановки и отслеживания финансовых целей.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>Пользователь зарегистрирован в системе и вошел в личный кабинет.</li>
+<li>Система корректно работает и отображает основные данные о финансах пользователя.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> переходит в раздел &quot;Финансовые цели&quot; и нажимает кнопку &quot;Создать цель&quot;.</li>
+<li><strong>Система</strong> отображает форму с полями: Название цели, Сумма накоплений, Срок достижения.</li>
+<li><strong>Пользователь</strong> заполняет поля (например, &quot;Отпуск в Испании&quot;, 100 000 рублей, 6 месяцев).</li>
+<li><strong>Пользователь</strong> нажимает кнопку &quot;Сохранить&quot;.</li>
+<li><strong>Система</strong> сохраняет цель и отображает её на странице &quot;Финансовые цели&quot; с индикатором прогресса.</li>
+<li><strong>Пользователь</strong> может вносить дополнительные накопления по мере поступления доходов (например, переводить 5 000 рублей в категорию цели).</li>
+<li><strong>Система</strong> автоматически обновляет индикатор прогресса и уведомляет пользователя, когда цель достигнута.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если <strong>Пользователь</strong> пытается создать цель без заполнения обязательных полей, <strong>Система</strong> отображает сообщение: &quot;Пожалуйста, заполните все обязательные поля&quot;.</li>
+<li>Если <strong>Пользователь</strong> вводит некорректные данные (например, отрицательная сумма), <strong>Система</strong> отображает сообщение: &quot;Сумма накоплений должна быть положительной&quot;.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Система создает и сохраняет новую финансовую цель.</li>
+<li>Пользователь может отслеживать прогресс и редактировать цель при необходимости.</li>
+</ul>
+<h1>Use Case 6 — Уведомление о превышении бюджета</h1>
+<p><strong>Цель</strong>: Уведомить пользователя о том, что одна из категорий расходов превысила установленный лимит, чтобы предотвратить излишние траты.</p>
+<p><strong>Приоритет:</strong> Could Have</p>
+<p><strong>Обоснование:</strong> Интересная функция, довольно удобная для пользователя.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> - лицо, управляющее личными финансами.</li>
+<li><strong>Система</strong> - инструмент, отвечающий за отслеживание превышений бюджета и уведомление пользователя.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>У пользователя есть активный бюджет, включающий лимиты на различные категории расходов.</li>
+<li>Система получает данные о всех финансовых операциях пользователя.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> вносит новую операцию (например, покупка продуктов на 5 000 рублей).</li>
+<li><strong>Система</strong> сравнивает сумму операции с оставшимся бюджетом на категорию Продукты.</li>
+<li>Если операция приводит к превышению лимита, <strong>Система</strong> отправляет уведомление: &quot;Вы превысили лимит по категории Продукты на 2 000 рублей&quot;.</li>
+<li><strong>Пользователь</strong> получает уведомление и видит предупреждение на главной странице личного кабинета.</li>
+<li><strong>Пользователь</strong> нажимает на уведомление и попадает на страницу с детализированным отчетом по категории расходов.</li>
+<li><strong>Пользователь</strong> решает, стоит ли пересмотреть бюджет или скорректировать лимиты.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если после операции лимит не превышен, <strong>Система</strong> просто обновляет оставшуюся сумму без уведомлений.</li>
+<li>Если <strong>Пользователь</strong> отключил уведомления для данной категории, <strong>Система</strong> не отправляет никаких сообщений.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Уведомление отображается на главной странице и в истории уведомлений.</li>
+<li>Система обновляет состояние бюджета и визуализирует превышение на диаграммах.</li>
+</ul>
+<hr>
+<h1>Use Case 7 — Анализ финансового состояния</h1>
+<p><strong>Цель</strong>: Предоставить пользователю аналитический отчет о его финансовом состоянии, чтобы он мог лучше понимать свои доходы, расходы и распределение средств.</p>
+<p><strong>Приоритет:</strong> Must Have</p>
+<p><strong>Обоснование:</strong> Одна из главных функций для клиента.</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li><strong>Пользователь</strong> - владелец учетной записи, взаимодействующий с системой.</li>
+<li><strong>Система</strong> - инструмент для анализа и визуализации финансовых данных.</li>
+</ul>
+<p><strong>Предусловия</strong>:</p>
+<ul>
+<li>Пользователь имеет активный бюджет и вносил данные о доходах и расходах.</li>
+<li>Система корректно собирает и обрабатывает финансовые данные.</li>
+</ul>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li><strong>Пользователь</strong> переходит на страницу &quot;Анализ бюджета&quot; в личном кабинете.</li>
+<li><strong>Система</strong> загружает все данные о доходах и расходах за последний месяц и отображает их в виде таблицы.</li>
+<li><strong>Пользователь</strong> выбирает период анализа (например, за последний квартал или за текущий год).</li>
+<li><strong>Система</strong> пересчитывает данные и строит диаграммы: распределение расходов по категориям, динамику доходов и расходов.</li>
+<li><strong>Пользователь</strong> изучает отчеты и нажимает кнопку &quot;Получить рекомендации&quot;.</li>
+<li><strong>Система</strong> генерирует персонализированные советы по оптимизации расходов, анализирует накопления и предоставляет рекомендации по улучшению финансового состояния.</li>
+<li><strong>Пользователь</strong> сохраняет отчет в формате PDF для дальнейшего использования.</li>
+</ol>
+<p><strong>Альтернативные сценарии</strong>:</p>
+<ul>
+<li>Если за выбранный период данные отсутствуют, <strong>Система</strong> выводит сообщение: &quot;Нет данных для выбранного периода&quot;.</li>
+<li>Если <strong>Пользователь</strong> пытается создать отчет без указания периода, <strong>Система</strong> отображает сообщение: &quot;Пожалуйста, выберите период для анализа&quot;.</li>
+</ul>
+<p><strong>Постусловия</strong>:</p>
+<ul>
+<li>Система генерирует и отображает аналитический отчет.</li>
+<li>Отчет сохраняется в истории пользователя и может быть просмотрен в любое время.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/Embim/Mobilefinass/tree/main/my-website/docs/Требования/ft.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Mobilefinass/docs/category/requirements"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Requirements</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Mobilefinass/docs/Требования/nft"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Не Функциональные требования</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#функциональные-требования-по-проекту" class="table-of-contents__link toc-highlight">Функциональные требования по проекту</a><ul><li><a href="#текстовое-описание-функциональных-требований-классический-формат" class="table-of-contents__link toc-highlight">Текстовое описание функциональных требований (Классический формат)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Mobilefinass/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Mobilefinass/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
