@@ -5,4 +5,5 @@ hide_table_of_contents: true
 
 import ApiDocMdx from '@theme/ApiDocMdx';
 
-<ApiDocMdx id="mobilfinass" />
+<ApiDocMdx id="mobilefinass" />
+
